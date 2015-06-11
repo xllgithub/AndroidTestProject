@@ -271,6 +271,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int buttonBarStyle=0x7f01002e;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int clickable=0x7f0100a9;
         /**  Close button icon 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -793,6 +801,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 </table>
          */
         public static final int navigationMode=0x7f010055;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>horizontal</code></td><td>0</td><td></td></tr>
+<tr><td><code>vertical</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static final int orientation=0x7f0100aa;
         /**  Whether the popup window should overlap its anchor view. 
          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
@@ -1650,68 +1669,71 @@ containing a value of this type.
         public static final int ic_launcher=0x7f020037;
     }
     public static final class id {
-        public static final int action_bar=0x7f090031;
+        public static final int action_bar=0x7f090033;
         public static final int action_bar_activity_content=0x7f090003;
-        public static final int action_bar_container=0x7f090030;
-        public static final int action_bar_root=0x7f09002c;
+        public static final int action_bar_container=0x7f090032;
+        public static final int action_bar_root=0x7f09002e;
         public static final int action_bar_spinner=0x7f090002;
-        public static final int action_bar_subtitle=0x7f09001f;
-        public static final int action_bar_title=0x7f09001e;
-        public static final int action_context_bar=0x7f090032;
+        public static final int action_bar_subtitle=0x7f090021;
+        public static final int action_bar_title=0x7f090020;
+        public static final int action_context_bar=0x7f090034;
         public static final int action_menu_divider=0x7f090005;
         public static final int action_menu_presenter=0x7f090006;
-        public static final int action_mode_bar=0x7f09002e;
-        public static final int action_mode_bar_stub=0x7f09002d;
-        public static final int action_mode_close_button=0x7f090020;
-        public static final int action_settings=0x7f09003f;
-        public static final int activity_chooser_view_content=0x7f090021;
+        public static final int action_mode_bar=0x7f090030;
+        public static final int action_mode_bar_stub=0x7f09002f;
+        public static final int action_mode_close_button=0x7f090022;
+        public static final int action_settings=0x7f090042;
+        public static final int activity_chooser_view_content=0x7f090023;
         public static final int always=0x7f090014;
         public static final int beginning=0x7f09001b;
-        public static final int checkbox=0x7f090029;
+        public static final int checkbox=0x7f09002b;
         public static final int collapseActionView=0x7f090015;
-        public static final int decor_content_parent=0x7f09002f;
-        public static final int default_activity_button=0x7f090024;
+        public static final int decor_content_parent=0x7f090031;
+        public static final int default_activity_button=0x7f090026;
         public static final int dialog=0x7f090019;
         public static final int disableHome=0x7f09000d;
         public static final int dropdown=0x7f09001a;
-        public static final int edit_query=0x7f090033;
+        public static final int edit_query=0x7f090035;
         public static final int end=0x7f09001c;
-        public static final int expand_activities_button=0x7f090022;
-        public static final int expanded_menu=0x7f090028;
+        public static final int expand_activities_button=0x7f090024;
+        public static final int expanded_menu=0x7f09002a;
         public static final int home=0x7f090000;
         public static final int homeAsUp=0x7f09000e;
-        public static final int icon=0x7f090026;
+        public static final int horizontal=0x7f09001e;
+        public static final int icon=0x7f090028;
         public static final int ifRoom=0x7f090016;
-        public static final int image=0x7f090023;
+        public static final int image=0x7f090025;
         public static final int listMode=0x7f09000a;
-        public static final int list_item=0x7f090025;
+        public static final int list_item=0x7f090027;
         public static final int middle=0x7f09001d;
+        public static final int myview=0x7f090041;
         public static final int never=0x7f090017;
         public static final int none=0x7f09000f;
         public static final int normal=0x7f09000b;
         public static final int progress_circular=0x7f090007;
         public static final int progress_horizontal=0x7f090008;
-        public static final int radio=0x7f09002b;
-        public static final int search_badge=0x7f090035;
-        public static final int search_bar=0x7f090034;
-        public static final int search_button=0x7f090036;
-        public static final int search_close_btn=0x7f09003b;
-        public static final int search_edit_frame=0x7f090037;
-        public static final int search_go_btn=0x7f09003d;
-        public static final int search_mag_icon=0x7f090038;
-        public static final int search_plate=0x7f090039;
-        public static final int search_src_text=0x7f09003a;
-        public static final int search_voice_btn=0x7f09003e;
-        public static final int shortcut=0x7f09002a;
+        public static final int radio=0x7f09002d;
+        public static final int search_badge=0x7f090037;
+        public static final int search_bar=0x7f090036;
+        public static final int search_button=0x7f090038;
+        public static final int search_close_btn=0x7f09003d;
+        public static final int search_edit_frame=0x7f090039;
+        public static final int search_go_btn=0x7f09003f;
+        public static final int search_mag_icon=0x7f09003a;
+        public static final int search_plate=0x7f09003b;
+        public static final int search_src_text=0x7f09003c;
+        public static final int search_voice_btn=0x7f090040;
+        public static final int shortcut=0x7f09002c;
         public static final int showCustom=0x7f090010;
         public static final int showHome=0x7f090011;
         public static final int showTitle=0x7f090012;
         public static final int split_action_bar=0x7f090004;
-        public static final int submit_area=0x7f09003c;
+        public static final int submit_area=0x7f09003e;
         public static final int tabMode=0x7f09000c;
-        public static final int title=0x7f090027;
+        public static final int title=0x7f090029;
         public static final int up=0x7f090001;
         public static final int useLogo=0x7f090013;
+        public static final int vertical=0x7f09001f;
         public static final int withText=0x7f090018;
         public static final int wrap_content=0x7f090009;
     }
@@ -1768,7 +1790,9 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030014;
         public static final int abc_simple_dropdown_hint=0x7f030015;
         public static final int activity_main=0x7f030016;
-        public static final int support_simple_spinner_dropdown_item=0x7f030017;
+        public static final int activity_t=0x7f030017;
+        public static final int image_name_item=0x7f030018;
+        public static final int support_simple_spinner_dropdown_item=0x7f030019;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
@@ -3760,6 +3784,52 @@ containing a value of this type.
           @attr name com.xll:preserveIconSpacing
         */
         public static final int MenuView_preserveIconSpacing = 7;
+        /** Attributes that can be used with a OvalView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #OvalView_clickable com.xll:clickable}</code></td><td></td></tr>
+           <tr><td><code>{@link #OvalView_orientation com.xll:orientation}</code></td><td></td></tr>
+           </table>
+           @see #OvalView_clickable
+           @see #OvalView_orientation
+         */
+        public static final int[] OvalView = {
+            0x7f0100a9, 0x7f0100aa
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.xll.R.attr#clickable}
+          attribute's value can be found in the {@link #OvalView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.xll:clickable
+        */
+        public static final int OvalView_clickable = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.xll.R.attr#orientation}
+          attribute's value can be found in the {@link #OvalView} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>horizontal</code></td><td>0</td><td></td></tr>
+<tr><td><code>vertical</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name com.xll:orientation
+        */
+        public static final int OvalView_orientation = 1;
         /** Attributes that can be used with a PopupWindow.
            <p>Includes the following attributes:</p>
            <table>

@@ -1,16 +1,37 @@
-package com.xll;
+package com.xll.activity;
+
+import com.xll.R;
+import com.xll.R.id;
+import com.xll.R.layout;
+import com.xll.R.menu;
+import com.xll.myview.OvalView;
+import com.xll.myview.OvalView.OnMyClickListener;
 
 import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends ActionBarActivity {
 
+	private OvalView ov;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		ov = (OvalView)findViewById(R.id.myview);
+		ov.setOnMyClickListener(new OnMyClickListener() {
+			
+			@Override
+			public void onMyClick() {
+				// TODO Auto-generated method stub
+				startActivity(new Intent(MainActivity.this, TActivity.class));
+			}
+		});
+		
 	}
 
 	@Override

@@ -6,14 +6,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.xll.activity.MainActivity" 
-    xmlns:oval="http://schemas.android.com/apk/res/com.xll">
+    tools:context="com.xll.activity.MainActivity" >
     
-    <com.xll.myview.OvalView
-        android:id="@+id/myview"
-        android:layout_width="400dip"
-        android:layout_height="300dip"
-        oval:clickable="true"
-        oval:orientation="horizontal"/>
+    <TextView 
+		android:text="@string/hello_world"
+		android:textSize="16sp"
+		android:layout_width="match_parent"       
+		android:layout_height="wrap_content"
+        />
 
 </RelativeLayout>
